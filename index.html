@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/43a66f215e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <title>Movie_v1</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <div class="header">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <div class="logo">
+                <img src="img/logo.svg" alt="Logo for the app" />
+                <a href="#">LOGO</a>
+              </div>
+            </li>
+            <li>
+              <div class="movie-search">
+                <input
+                  name="search"
+                  type="text"
+                  placeholder="Search by movie title"
+                  value=""
+                />
+                <i class="fas fa-search search-btn" aria-hidden="true"></i>
+              </div>
+            </li>
+            <li class="fancy"><a href="#">Home</a></li>
+            <li class="fancy"><a href="#">Movies</a></li>
+            <li class="fancy"><a href="#">TV</a></li>
+            <li>
+              <a href="#"><button class="btn-auth">Sign up</button></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <!-- <div class="swiper">
+      
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+          "
+        ></div>
+      
+    </div> -->
+
+    <div class="per">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+            "
+          >
+            <div class="details-container">
+              <div class="info">
+                <h2 class="title">Eternals</h2>
+                <div class="title-details">
+                  The Eternals are a team of ancient aliens who have been living
+                  on Earth in secret for thousands of years. When an unexpected
+                  tragedy forces them out of the shadows, they are forced to
+                  reunite against mankind’s most ancient enemy, the Deviants.
+                </div>
+                <div class="btns">
+                  <button class="btn-now">Watch Now</button>
+                  <button class="btn-trailer">Watch Trailer</button>
+                </div>
+              </div>
+              <div class="poster"></div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://image.tmdb.org/t/p/original//k2twTjSddgLc1oFFHVibfxp2kQV.jpg);
+            "
+          ></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="bottom-push"></div>
+      <footer>
+        <div class="footer-logo">
+          <img src="img/footer-logo.svg" alt="Logo for the app" />
+          <a href="#">LOGO</a>
+        </div>
+        <div class="social">
+          <h4>Stay Connected!</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="message">
+          &copy; Made with
+          <i class="fas fa-heart heart"></i> by
+          <a href="https://github.com/AlankritVerma07">Alan & Jackie</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        loop: true,
+        // effect: "cube",
+        // grabCursor: true,
+        // cubeEffect: {
+        //   shadow: true,
+        //   slideShadows: true,
+        //   shadowOffset: 20,
+        //   shadowScale: 0.94,
+        // },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
+  </body>
+</html>
