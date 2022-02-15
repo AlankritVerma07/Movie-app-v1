@@ -334,9 +334,10 @@ div.button-prev2 {
   max-width: 1200px;
   margin: 0 auto;
 }
-.showCase-1 {
+.showCase-1,
+.showCase-2 {
   padding: 0 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .showCase-title-1 {
   display: flex;
